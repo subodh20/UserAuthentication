@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <>This first step</>;
+  return <>This is Home component</>;
 }
 
 export default App;
