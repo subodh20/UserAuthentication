@@ -44,7 +44,7 @@ module.exports.Login = async (req, res, next) => {
     });
     res
       .status(201)
-      .json({ message: "User is loggedin successfully", success: true });
+      .json({ message: "User is loggedin successfully", success: true, token });
     next();
   } catch (err) {
     console.error(err);

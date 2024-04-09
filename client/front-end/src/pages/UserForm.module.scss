@@ -1,0 +1,36 @@
+.Signup {
+  width: 100%;
+  padding: 2rem 3rem;
+  background-color: white;
+  margin: auto;
+  border-radius: 15px;
+
+  h1 {
+    text-align: center;
+    margin-top: -0.6em;
+  }
+}
+.Email,
+.Username,
+.Password {
+  margin-bottom: 20px;
+}
+label {
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.Button {
+  button {
+    width: 100%;
+    height: 5vh;
+    background-color: #080e4b;
+    color: white;
+    border-radius: 5px;
+  }
+}
