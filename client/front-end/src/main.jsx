@@ -6,7 +6,7 @@ import Login from "./pages/Login.jsx";
 import Error from "./pages/Error.jsx";
 import "./index.css";
 import "react-toastify/dist/ReactToastify.css";
-
+import { ToastContainer } from "react-toastify";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,5 +25,8 @@ const router = createBrowserRouter([
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <>
+    <RouterProvider router={router} />
+    <ToastContainer />
+  </>
 );

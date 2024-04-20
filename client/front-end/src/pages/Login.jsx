@@ -1,6 +1,7 @@
 import classes from "./UserForm.module.scss";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 const Login = () => {
@@ -28,18 +29,17 @@ const Login = () => {
     );
   };
   const handleSuccess = (message) => {
-    toast.success(message, { position: "bottom-left" });
+    toast.success(message, { position: "bottom-center" });
   };
   const handleError = (message) => {
-    toast.error(message, { position: "bottom-left" });
+    toast.error(message, { position: "bottom-center" });
   };
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:4000/signup", {
+      const { data } = await axios.post("http://localhost:4000/login", {
         ...userCredentials,
       });
-      console.log(data);
       const { success, message } = data;
       if (success) {
         handleSuccess(message);

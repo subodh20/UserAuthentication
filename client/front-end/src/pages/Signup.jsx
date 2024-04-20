@@ -12,7 +12,6 @@ const Signup = () => {
     password: "",
   });
   const { email, username, password } = userCredentials;
-  console.log(email);
   const navigateToLoginPage = () => {
     navigate("/login");
   };
@@ -32,7 +31,6 @@ const Signup = () => {
       const { data } = await axios.post("http://localhost:4000/signup", {
         ...userCredentials,
       });
-      console.log(data);
       const { success, message } = data;
       if (success) {
         handleSuccess(message);
