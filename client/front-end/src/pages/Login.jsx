@@ -4,6 +4,7 @@ import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
+import Page from "../components/Page";
 const Login = () => {
   const navigate = useNavigate();
   const [busy, setBusy] = useState(false);
@@ -54,7 +55,7 @@ const Login = () => {
     }
   };
   return (
-    <>
+    <Page>
       <div className={classes.Signup}>
         <h1>Login</h1>
         <div className={classes.Email}>
@@ -100,7 +101,7 @@ const Login = () => {
         </p>
       </div>
       <ToastContainer />
-    </>
+    </Page>
   );
 };
 export default Login;

@@ -1,0 +1,8 @@
+.Page {
+  width: calc(100% - 40px);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
